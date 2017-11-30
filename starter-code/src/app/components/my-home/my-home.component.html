@@ -1,0 +1,16 @@
+
+  
+  <ul>
+    <li *ngFor="let movie of movies">
+      <p> {{movie.title}}</p>
+      <p> {{movie.id}}</p>
+      <img src= "{{movie.poster}}">
+      <p> {{movie.synopsis}}</p>
+      <p> {{movie.genres}}</p>
+      <p> {{movie.year}}</p>
+      <a [routerLink]="['/movie',movie.id]">Details</a>
+    </li>
+  </ul>
+  <button type="button" (click)="hello2()">BUTTON2</button>
+  <button type="button" (click)="hello()">BUTTON</button>
+  <a [routerLink]="['/movie']">MOVIE</a>
